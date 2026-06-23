@@ -1,124 +1,110 @@
-# ServiceNow Task 1 - Custom Field and Choice Value
+# ServiceNow Developer Capstone Project
 
-## Objective
+This repository contains my complete ServiceNow Developer Capstone Project implementation performed in a ServiceNow Personal Developer Instance (PDI).
 
-The objective of this task was to customize the Incident table by creating a new custom field and adding a new category choice value.
-
-### Requirements
-
-1. Create a new Incident field:
-
-   * Label: sFone Model
-   * Type: String
-   * Length: 40
-
-2. Add a new Incident Category:
-
-   * Label: sFone
-   * Value: sfone
-
-3. Verify the configuration by creating an Incident record.
+The project is being completed task-by-task with both theoretical understanding and practical implementation.
 
 ---
 
-## Concepts Covered
+## Project Objectives
 
-* ServiceNow Tables
-* Records
-* Fields
-* Forms
-* Dictionary Entries
-* Choice Lists
-* Form Layout
-* sys_dictionary
-* sys_choice
+- Learn ServiceNow Administration
+- Understand ServiceNow Development Concepts
+- Gain hands-on experience with ITSM
+- Implement real-world business requirements
+- Build a professional GitHub portfolio
 
 ---
 
-## Implementation Steps
+## Tasks Completed
 
-### Step 1: Open Incident Form
+### Task 1 – Custom Field and Choice Value Configuration
 
-Navigate to:
+#### Objective
+Create support for Strawberry Phone (sFone) incidents.
 
-Incident → Create New
+#### Activities Performed
 
-Open a new Incident record.
+- Created custom Incident field:
+  - Label: sFone Model
+  - Type: String
+  - Length: 40
 
-### Step 2: Configure Form Layout
+- Added custom Incident Category:
+  - Label: sFone
+  - Value: sfone
 
-Right-click the Incident form header.
+- Added field to Incident Form Layout
 
-Select:
+- Created verification Incident
 
-Configure → Form Layout
+#### Concepts Learned
 
-### Step 3: Create Custom Field
+- Tables
+- Records
+- Fields
+- Dictionary Entries
+- Choice Lists
+- Form Layout
+- sys_dictionary
+- sys_choice
 
-Create a new field with:
+#### Verification
 
-* Name: sFone Model
-* Type: String
-* Length: 40
+Successfully created incident:
 
-ServiceNow automatically creates:
-
-u_sfone_model
-
-in the Incident table.
-
-### Step 4: Add Field to Form
-
-Move the newly created field from Available Fields to Selected Fields.
-
-Save the form layout.
-
-### Step 5: Add Category Choice
-
-Open Category field configuration.
-
-Add a new choice:
-
-* Label: sFone
-* Value: sfone
-
-Save the choice.
-
-### Step 6: Verify
-
-Create a new Incident:
-
-* Caller: Megan Burke
-* Category: sFone
-* sFone Model: sFone Pro
-* Short Description: My sFone will not turn on
-
-Submit the record.
+- Caller: Megan Burke
+- Category: sFone
+- sFone Model: sFone Pro
 
 ---
 
-## Result
+### Task 2 – User Administration
 
-Successfully created:
+#### Objective
 
-* Custom field: sFone Model
-* Custom category: sFone
-* Verification Incident
+Create a dedicated support team for Strawberry Phone incidents.
 
-The Incident was created successfully and appeared in the Incident list.
+#### Activities Performed
+
+- Navigated to Service Desk Group
+- Created child group:
+  - Strawberry Support
+
+- Assigned Group Manager:
+  - Fred Luddy
+
+- Added ITIL Role
+
+- Added Members:
+  - Beth Anglin
+  - Bud Richman
+  - David Loo
+  - Karla Prince
+  - Waldo Edberg
+
+- Updated User Record:
+  - Manager of Karla Prince → Fred Luddy
+
+#### Concepts Learned
+
+- Users
+- Groups
+- Roles
+- Group Hierarchy
+- Group Membership
+- Manager Relationships
+- Role-Based Access Control (RBAC)
+
+#### Verification
+
+Successfully verified:
+
+- Strawberry Support Group exists
+- Fred Luddy assigned as Manager
+- ITIL Role assigned
+- Members added successfully
 
 ---
 
-## Tables Used
-
-### incident
-
-Stores Incident records.
-
-### sys_dictionary
-
-Stores field definitions.
-
-### sys_choice
-
-Stores choice values.
+## Repository Structure
