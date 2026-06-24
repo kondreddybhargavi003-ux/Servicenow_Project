@@ -1,0 +1,329 @@
+
+# ServiceNow Capstone Project Learning Notes
+
+---
+
+# Task 1 Learning
+
+## Custom Fields
+
+A custom field stores additional business information not available in the default table structure.
+
+Example:
+
+sFone Model
+
+Added to Incident table to store device model information.
+
+---
+
+## Dictionary Entry
+
+A Dictionary Entry defines:
+
+- Field Type
+- Field Length
+- Label
+- Attributes
+
+Every field created in ServiceNow automatically creates a Dictionary Entry.
+
+---
+
+## Choice Lists
+
+Choice Lists provide predefined values to users.
+
+Benefits:
+
+- Data consistency
+- Reduced input errors
+- Standardization
+
+Example:
+
+Category = sFone
+
+---
+
+## Form Layout
+
+Form Layout controls:
+
+- Field visibility
+- Field placement
+- User experience
+
+---
+
+# Task 2 Learning
+
+## User Administration
+
+User Administration manages:
+
+- Users
+- Groups
+- Roles
+
+within ServiceNow.
+
+---
+
+## Users
+
+Users represent individual people who access the platform.
+
+Example:
+
+- Fred Luddy
+- Bud Richman
+- David Loo
+
+---
+
+## Groups
+
+Groups collect users together for:
+
+- Assignment
+- Collaboration
+- Work Distribution
+
+Example:
+
+Strawberry Support Group
+
+---
+
+## Roles
+
+Roles define permissions.
+
+Example:
+
+itil
+
+allows access to ITSM operations.
+
+---
+
+## RBAC
+
+Role-Based Access Control controls access using roles.
+
+Instead of assigning permissions directly to users:
+
+User → Group → Role → Access
+
+Benefits:
+
+- Security
+- Scalability
+- Easier Administration
+
+Example:
+
+Strawberry Support Group received itil role.
+
+All group members inherit required permissions.
+
+---
+
+## Manager Relationships
+
+Managers help support:
+
+- Approvals
+- Escalations
+- Reporting
+
+Example:
+
+Kara Prince → Manager = Fred Luddy
+
+---
+
+# Task 3 Learning
+
+## Service Catalog
+
+Service Catalog provides a self-service portal for requesting:
+
+- Hardware
+- Software
+- Services
+- Mobile Devices
+
+Benefits:
+
+- Standardized Requests
+- Faster Fulfillment
+- Better Tracking
+
+---
+
+## Catalog Item
+
+A Catalog Item represents a product or service users can request.
+
+Example:
+
+Strawberry sFone
+
+---
+
+## Request Lifecycle
+
+User Request
+
+↓
+
+REQ (Request)
+
+↓
+
+RITM (Requested Item)
+
+↓
+
+SCTASK (Catalog Tasks)
+
+↓
+
+Fulfillment
+
+↓
+
+Completion
+
+---
+
+## Request (REQ)
+
+REQ represents the overall request.
+
+Example:
+
+REQ0010001
+
+Acts like a shopping cart.
+
+---
+
+## Requested Item (RITM)
+
+RITM represents an individual requested item.
+
+Example:
+
+Strawberry sFone
+
+One REQ may contain multiple RITMs.
+
+---
+
+## Catalog Tasks (SCTASK)
+
+Catalog Tasks break fulfillment into manageable activities.
+
+Examples:
+
+- Order Device
+- Configure Device
+- Deliver Device
+
+---
+
+## Flow Designer
+
+Flow Designer automates business processes without coding.
+
+Capabilities:
+
+- Triggers
+- Actions
+- Approvals
+- Conditions
+- Notifications
+
+---
+
+## Approval Workflow
+
+Manager approval ensures:
+
+- Governance
+- Budget Control
+- Authorization
+
+Before fulfillment begins.
+
+---
+
+## Workflow Automation
+
+Automation reduces:
+
+- Manual work
+- Errors
+- Delays
+
+while improving consistency.
+
+---
+
+## Flow Logic Used
+
+Trigger:
+Catalog Item Requested
+
+↓
+
+Ask For Approval
+
+↓
+
+If Approved
+
+↓
+
+Create Task 1
+
+↓
+
+Create Task 2
+
+↓
+
+Create Task 3
+
+↓
+
+Close Requested Item
+
+Else
+
+↓
+
+Send Rejection Email
+
+↓
+
+End Flow
+
+---
+
+# Key Takeaways
+
+Task 1:
+- Learned data model customization.
+
+Task 2:
+- Learned security and access management.
+
+Task 3:
+- Learned end-to-end request fulfillment automation.
+
+Overall:
+- Gained practical experience with ServiceNow Administration and Development concepts used in real-world ITSM implementations.
